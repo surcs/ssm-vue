@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.surc.service.impl.BaseServiceImpl</OriginalElement>
+  <nodes>
+    <node x="1869.7008928571427" y="112.0">com.surc.service.OrderService</node>
+    <node x="338.7499999999998" y="112.0">com.surc.service.UserService</node>
+    <node x="144.85714285714266" y="344.0">com.surc.service.impl.ClientPurchaseOrderServiceImpl</node>
+    <node x="476.85714285714266" y="344.0">com.surc.service.impl.UserServiceImpl</node>
+    <node x="1915.9196428571427" y="344.0">com.surc.service.impl.PurchaseOrderServiceImpl</node>
+    <node x="0.0" y="112.0">com.surc.service.ClientPurchaseOrderService</node>
+    <node x="1297.2008928571427" y="112.0">com.surc.service.ClientService</node>
+    <node x="1479.2008928571427" y="112.0">com.surc.service.impl.BaseServiceImpl</node>
+    <node x="1103.8571428571427" y="344.0">com.surc.service.impl.ClientServiceImpl</node>
+    <node x="1707.9196428571427" y="344.0">com.surc.service.impl.OrderServiceImpl</node>
+    <node x="1299.1071428571424" y="0.0">com.surc.service.BaseService</node>
+    <node x="2073.5133928571427" y="112.0">com.surc.service.PurchaseOrderService</node>
+    <node x="1499.9196428571427" y="344.0">com.surc.service.impl.GoodsServiceImpl</node>
+    <node x="676.8571428571427" y="344.0">com.surc.service.impl.DispatchOrderServiceImpl</node>
+    <node x="758.7847222222221" y="112.0">org.springframework.stereotype.Service</node>
+    <node x="505.6874999999998" y="112.0">com.surc.service.DispatchOrderService</node>
+    <node x="1012.6071428571427" y="112.0">org.springframework.transaction.annotation.Transactional</node>
+    <node x="1679.2008928571427" y="112.0">com.surc.service.GoodsService</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.surc.service.impl.DispatchOrderServiceImpl" target="org.springframework.stereotype.Service">
+      <point x="-32.375" y="-16.0" />
+      <point x="773.9821428571427" y="254.0" />
+      <point x="797.7132936507934" y="254.0" />
+      <point x="-15.571428571428669" y="16.0" />
+    </edge>
+    <edge source="com.surc.service.ClientService" target="com.surc.service.BaseService">
+      <point x="-2.2737367544323206E-13" y="-16.0" />
+      <point x="1378.2008928571424" y="92.0" />
+      <point x="1362.1071428571424" y="92.0" />
+      <point x="-9.0" y="16.0" />
+    </edge>
+    <edge source="com.surc.service.impl.DispatchOrderServiceImpl" target="com.surc.service.impl.BaseServiceImpl">
+      <point x="97.125" y="-16.0" />
+      <point x="903.4821428571427" y="314.0" />
+      <point x="1543.486607142857" y="314.0" />
+      <point x="-25.714285714285666" y="16.0" />
+    </edge>
+    <edge source="com.surc.service.impl.ClientServiceImpl" target="com.surc.service.ClientService">
+      <point x="24.625" y="-16.0" />
+      <point x="1226.9821428571427" y="284.0" />
+      <point x="1378.2008928571427" y="284.0" />
+      <point x="0.0" y="16.0" />
+    </edge>
+    <edge source="com.surc.service.impl.BaseServiceImpl" target="com.surc.service.BaseService">
+      <point x="0.0" y="-16.0" />
+      <point x="1569.2008928571427" y="82.0" />
+      <point x="1380.1071428571424" y="82.0" />
+      <point x="9.0" y="16.0" />
+    </edge>
+    <edge source="com.surc.service.impl.GoodsServiceImpl" target="org.springframework.stereotype.Service">
+      <point x="-70.5" y="-16.0" />
+      <point x="1523.4196428571427" y="234.0" />
+      <point x="828.8561507936507" y="234.0" />
+      <point x="15.571428571428669" y="16.0" />
+    </edge>
+    <edge source="com.surc.service.impl.PurchaseOrderServiceImpl" target="org.springframework.transaction.annotation.Transactional">
+      <point x="-32.375" y="-16.0" />
+      <point x="2013.0446428571427" y="174.0" />
+      <point x="1163.0357142857142" y="174.0" />
+      <point x="69.42857142857156" y="16.0" />
+    </edge>
+    <edge source="com.surc.service.DispatchOrderService" target="com.surc.service.BaseService">
+      <point x="0.0" y="-16.0" />
+      <point x="617.6874999999998" y="92.0" />
+      <point x="1344.1071428571424" y="92.0" />
+      <point x="-27.0" y="16.0" />
+    </edge>
+    <edge source="com.surc.service.impl.GoodsServiceImpl" target="com.surc.service.impl.BaseServiceImpl">
+      <point x="23.5" y="-16.0" />
+      <point x="1617.4196428571427" y="324.0" />
+      <point x="1594.9151785714284" y="324.0" />
+      <point x="25.714285714285666" y="16.0" />
+    </edge>
+    <edge source="com.surc.service.impl.OrderServiceImpl" target="org.springframework.stereotype.Service">
+      <point x="-70.5" y="-16.0" />
+      <point x="1731.4196428571427" y="214.0" />
+      <point x="844.4275793650792" y="214.0" />
+      <point x="31.14285714285711" y="16.0" />
+    </edge>
+    <edge source="com.surc.service.impl.ClientPurchaseOrderServiceImpl" target="org.springframework.transaction.annotation.Transactional">
+      <point x="39.0" y="-16.0" />
+      <point x="339.85714285714266" y="264.0" />
+      <point x="1024.178571428571" y="264.0" />
+      <point x="-69.42857142857144" y="16.0" />
+    </edge>
+    <edge source="com.surc.service.impl.PurchaseOrderServiceImpl" target="com.surc.service.PurchaseOrderService">
+      <point x="97.125" y="-16.0" />
+      <point x="2142.5446428571427" y="324.0" />
+      <point x="2185.5133928571427" y="324.0" />
+      <point x="0.0" y="16.0" />
+    </edge>
+    <edge source="com.surc.service.impl.DispatchOrderServiceImpl" target="com.surc.service.DispatchOrderService">
+      <point x="-97.125" y="-16.0" />
+      <point x="709.2321428571427" y="224.0" />
+      <point x="617.6874999999998" y="224.0" />
+      <point x="0.0" y="16.0" />
+    </edge>
+    <edge source="com.surc.service.PurchaseOrderService" target="com.surc.service.BaseService">
+      <point x="0.0" y="-16.0" />
+      <point x="2185.5133928571427" y="52.0" />
+      <point x="1434.1071428571424" y="52.0" />
+      <point x="63.0" y="16.0" />
+    </edge>
+    <edge source="com.surc.service.impl.DispatchOrderServiceImpl" target="org.springframework.transaction.annotation.Transactional">
+      <point x="32.375" y="-16.0" />
+      <point x="838.7321428571427" y="284.0" />
+      <point x="1070.4642857142856" y="284.0" />
+      <point x="-23.14285714285711" y="16.0" />
+    </edge>
+    <edge source="com.surc.service.OrderService" target="com.surc.service.BaseService">
+      <point x="0.0" y="-16.0" />
+      <point x="1946.2008928571427" y="62.0" />
+      <point x="1416.1071428571424" y="62.0" />
+      <point x="45.0" y="16.0" />
+    </edge>
+    <edge source="com.surc.service.ClientPurchaseOrderService" target="com.surc.service.BaseService">
+      <point x="0.0" y="-16.0" />
+      <point x="138.0" y="72.0" />
+      <point x="1308.1071428571424" y="72.0" />
+      <point x="-63.0" y="16.0" />
+    </edge>
+    <edge source="com.surc.service.impl.ClientServiceImpl" target="org.springframework.stereotype.Service">
+      <point x="-73.875" y="-16.0" />
+      <point x="1128.4821428571427" y="254.0" />
+      <point x="813.2847222222221" y="254.0" />
+      <point x="0.0" y="16.0" />
+    </edge>
+    <edge source="com.surc.service.impl.OrderServiceImpl" target="com.surc.service.OrderService">
+      <point x="70.5" y="-16.0" />
+      <point x="1872.4196428571427" y="324.0" />
+      <point x="1946.2008928571427" y="324.0" />
+      <point x="0.0" y="16.0" />
+    </edge>
+    <edge source="com.surc.service.impl.ClientPurchaseOrderServiceImpl" target="com.surc.service.ClientPurchaseOrderService">
+      <point x="-117.0" y="-16.0" />
+      <point x="183.85714285714266" y="324.0" />
+      <point x="138.0" y="324.0" />
+      <point x="0.0" y="16.0" />
+    </edge>
+    <edge source="com.surc.service.impl.PurchaseOrderServiceImpl" target="org.springframework.stereotype.Service">
+      <point x="-97.125" y="-16.0" />
+      <point x="1948.2946428571427" y="184.0" />
+      <point x="859.9990079365078" y="184.0" />
+      <point x="46.71428571428578" y="16.0" />
+    </edge>
+    <edge source="com.surc.service.GoodsService" target="com.surc.service.BaseService">
+      <point x="0.0" y="-16.0" />
+      <point x="1755.7008928571427" y="72.0" />
+      <point x="1398.1071428571424" y="72.0" />
+      <point x="27.0" y="16.0" />
+    </edge>
+    <edge source="com.surc.service.impl.GoodsServiceImpl" target="org.springframework.transaction.annotation.Transactional">
+      <point x="-23.5" y="-16.0" />
+      <point x="1570.4196428571427" y="224.0" />
+      <point x="1116.7499999999998" y="224.0" />
+      <point x="23.14285714285711" y="16.0" />
+    </edge>
+    <edge source="com.surc.service.impl.ClientPurchaseOrderServiceImpl" target="com.surc.service.impl.BaseServiceImpl">
+      <point x="117.0" y="-16.0" />
+      <point x="417.85714285714266" y="294.0" />
+      <point x="1492.0580357142856" y="294.0" />
+      <point x="-77.14285714285711" y="16.0" />
+    </edge>
+    <edge source="com.surc.service.impl.UserServiceImpl" target="com.surc.service.UserService">
+      <point x="-67.5" y="-16.0" />
+      <point x="499.35714285714266" y="224.0" />
+      <point x="410.7499999999998" y="224.0" />
+      <point x="0.0" y="16.0" />
+    </edge>
+    <edge source="com.surc.service.impl.ClientServiceImpl" target="com.surc.service.impl.BaseServiceImpl">
+      <point x="73.875" y="-16.0" />
+      <point x="1276.2321428571427" y="324.0" />
+      <point x="1569.2008928571427" y="324.0" />
+      <point x="0.0" y="16.0" />
+    </edge>
+    <edge source="com.surc.service.UserService" target="com.surc.service.BaseService">
+      <point x="0.0" y="-16.0" />
+      <point x="410.7499999999998" y="82.0" />
+      <point x="1326.1071428571424" y="82.0" />
+      <point x="-45.0" y="16.0" />
+    </edge>
+    <edge source="com.surc.service.impl.PurchaseOrderServiceImpl" target="com.surc.service.impl.BaseServiceImpl">
+      <point x="32.375" y="-16.0" />
+      <point x="2077.7946428571427" y="164.0" />
+      <point x="1646.3437499999998" y="164.0" />
+      <point x="77.14285714285711" y="16.0" />
+    </edge>
+    <edge source="com.surc.service.impl.UserServiceImpl" target="org.springframework.stereotype.Service">
+      <point x="-22.5" y="-16.0" />
+      <point x="544.3571428571427" y="244.0" />
+      <point x="782.141865079365" y="244.0" />
+      <point x="-31.14285714285711" y="16.0" />
+    </edge>
+    <edge source="com.surc.service.impl.ClientPurchaseOrderServiceImpl" target="org.springframework.stereotype.Service">
+      <point x="-39.0" y="-16.0" />
+      <point x="261.85714285714266" y="234.0" />
+      <point x="766.5704365079363" y="234.0" />
+      <point x="-46.71428571428578" y="16.0" />
+    </edge>
+    <edge source="com.surc.service.impl.ClientServiceImpl" target="org.springframework.transaction.annotation.Transactional">
+      <point x="-24.625" y="-16.0" />
+      <point x="1177.7321428571427" y="244.0" />
+      <point x="1093.6071428571427" y="244.0" />
+      <point x="0.0" y="16.0" />
+    </edge>
+    <edge source="com.surc.service.impl.GoodsServiceImpl" target="com.surc.service.GoodsService">
+      <point x="70.5" y="-16.0" />
+      <point x="1664.4196428571427" y="324.0" />
+      <point x="1755.7008928571427" y="324.0" />
+      <point x="0.0" y="16.0" />
+    </edge>
+    <edge source="com.surc.service.impl.UserServiceImpl" target="com.surc.service.impl.BaseServiceImpl">
+      <point x="67.5" y="-16.0" />
+      <point x="634.3571428571427" y="304.0" />
+      <point x="1517.7723214285713" y="304.0" />
+      <point x="-51.428571428571445" y="16.0" />
+    </edge>
+    <edge source="com.surc.service.impl.OrderServiceImpl" target="com.surc.service.impl.BaseServiceImpl">
+      <point x="23.5" y="-16.0" />
+      <point x="1825.4196428571427" y="194.0" />
+      <point x="1620.6294642857142" y="194.0" />
+      <point x="51.428571428571445" y="16.0" />
+    </edge>
+    <edge source="com.surc.service.impl.OrderServiceImpl" target="org.springframework.transaction.annotation.Transactional">
+      <point x="-23.5" y="-16.0" />
+      <point x="1778.4196428571427" y="204.0" />
+      <point x="1139.8928571428569" y="204.0" />
+      <point x="46.28571428571422" y="16.0" />
+    </edge>
+    <edge source="com.surc.service.impl.UserServiceImpl" target="org.springframework.transaction.annotation.Transactional">
+      <point x="22.5" y="-16.0" />
+      <point x="589.3571428571427" y="274.0" />
+      <point x="1047.3214285714284" y="274.0" />
+      <point x="-46.28571428571422" y="16.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.136151855047455" x="434.9229191980558" y="237.85495139732677" />
+  <SelectedNodes>
+    <node>com.surc.service.impl.BaseServiceImpl</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

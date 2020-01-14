@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.surc.dao.ClientMapper">
+<!--    void insert(Client client);-->
+    <insert id="insert" parameterType="Client">
+        insert into client (email, phone, name,sex,birth)
+        values(#{email},#{phone},#{name},#{sex},#{birth})
+    </insert>
+<!--    void delete(String email);-->
+    <delete id="delete">
+        delete from client where email = #{email}
+    </delete>
+<!--    void update(Client client);-->
+    <update id="update" parameterType="Client">
+        update client set phone = #{phone}, email = #{email},
+        name = #{name}, sex = #{sex}, birth = #{birth}
+        where email = #{email}
+    </update>
+<!--    Client selectById(String email);-->
+    <select id="selectById" resultType="Client">
+        select * from client where email = #{email}
+    </select>
+<!--    List<T> selectAll();-->
+    <select id="selectAll" resultType="Client">
+        select * from client
+    </select>
+</mapper>

@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.surc.entity.Client</OriginalElement>
+  <nodes>
+    <node x="430.83333333333337" y="604.0">com.surc.entity.DispatchOrder</node>
+    <node x="271.86450617283947" y="0.0">lombok.Setter</node>
+    <node x="1239.724691358025" y="0.0">lombok.Getter</node>
+    <node x="443.5311728395062" y="232.0">com.surc.entity.Goods</node>
+    <node x="959.8333333333335" y="604.0">com.surc.entity.PurchaseOrder</node>
+    <node x="1261.8333333333335" y="604.0">com.surc.entity.User</node>
+    <node x="1113.710802469136" y="232.0">com.surc.entity.Person</node>
+    <node x="612.8333333333335" y="604.0">com.surc.entity.ClientPurchaseOrder</node>
+    <node x="748.7083333333335" y="232.0">com.surc.entity.ItemOrder</node>
+    <node x="1359.724691358025" y="0.0">lombok.ToString</node>
+    <node x="1141.8333333333335" y="604.0">com.surc.entity.Client</node>
+    <node x="45.86450617283947" y="0.0">lombok.AllArgsConstructor</node>
+    <node x="391.86450617283947" y="0.0">com.fasterxml.jackson.databind.annotation.JsonDeserialize</node>
+    <node x="847.8333333333335" y="604.0">com.surc.entity.Order</node>
+    <node x="816.5904320987656" y="0.0">lombok.NoArgsConstructor</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.surc.entity.ClientPurchaseOrder" target="lombok.ToString">
+      <point x="89.58333333333337" y="-16.0" />
+      <point x="809.9166666666667" y="544.0" />
+      <point x="1422.9469135802472" y="544.0" />
+      <point x="1422.9469135802472" y="212.0" />
+      <point x="1418.724691358025" y="212.0" />
+      <point x="0.0" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.Goods" target="lombok.NoArgsConstructor">
+      <point x="7.666666666666629" y="-16.0" />
+      <point x="497.19783950617284" y="112.0" />
+      <point x="827.53487654321" y="112.0" />
+      <point x="-87.55555555555554" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.ItemOrder" target="lombok.ToString">
+      <point x="50.799999999999955" y="-16.0" />
+      <point x="863.0083333333334" y="192.0" />
+      <point x="1379.3913580246917" y="192.0" />
+      <point x="-39.33333333333326" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.Order" target="lombok.Getter">
+      <point x="23.0" y="-16.0" />
+      <point x="916.8333333333335" y="494.0" />
+      <point x="1300.9469135802472" y="494.0" />
+      <point x="11.111111111111086" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.PurchaseOrder" target="lombok.Getter">
+      <point x="40.5" y="-16.0" />
+      <point x="1081.3333333333335" y="504.0" />
+      <point x="1311.9469135802472" y="504.0" />
+      <point x="22.22222222222217" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.Client" target="com.surc.entity.Person">
+      <point x="8.333333333333258" y="-16.0" />
+      <point x="1200.1666666666667" y="324.0" />
+      <point x="1138.710802469136" y="324.0" />
+      <point x="-25.0" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.User" target="com.surc.entity.Person">
+      <point x="-6.9166666666667425" y="-16.0" />
+      <point x="1296.4166666666667" y="294.0" />
+      <point x="1188.710802469136" y="294.0" />
+      <point x="25.0" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.PurchaseOrder" target="lombok.Setter">
+      <point x="-40.5" y="-16.0" />
+      <point x="1000.3333333333335" y="374.0" />
+      <point x="310.920061728395" y="374.0" />
+      <point x="-11.111111111111086" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.Order" target="lombok.Setter">
+      <point x="-23.0" y="-16.0" />
+      <point x="870.8333333333335" y="404.0" />
+      <point x="299.920061728395" y="404.0" />
+      <point x="-22.222222222222285" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.DispatchOrder" target="lombok.NoArgsConstructor">
+      <point x="-13.500000000000057" y="-16.0" />
+      <point x="498.3333333333333" y="444.0" />
+      <point x="574.8796296296296" y="444.0" />
+      <point x="574.8796296296296" y="122.0" />
+      <point x="849.4237654320989" y="122.0" />
+      <point x="-65.66666666666663" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.ClientPurchaseOrder" target="lombok.NoArgsConstructor">
+      <point x="-17.91666666666663" y="-16.0" />
+      <point x="702.4166666666667" y="444.0" />
+      <point x="691.2708333333335" y="444.0" />
+      <point x="691.2708333333335" y="132.0" />
+      <point x="871.3126543209878" y="132.0" />
+      <point x="-43.77777777777783" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.Goods" target="lombok.AllArgsConstructor">
+      <point x="-38.33333333333343" y="-16.0" />
+      <point x="451.1978395061728" y="202.0" />
+      <point x="194.64228395061718" y="202.0" />
+      <point x="45.77777777777777" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.Order" target="lombok.ToString">
+      <point x="38.33333333333337" y="-16.0" />
+      <point x="932.1666666666667" y="554.0" />
+      <point x="1434.3506172839507" y="554.0" />
+      <point x="1434.3506172839507" y="212.0" />
+      <point x="1431.835802469136" y="212.0" />
+      <point x="13.111111111111086" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.ItemOrder" target="lombok.NoArgsConstructor">
+      <point x="0.0" y="-16.0" />
+      <point x="812.2083333333335" y="142.0" />
+      <point x="893.2015432098767" y="142.0" />
+      <point x="-21.888888888888914" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.ClientPurchaseOrder" target="lombok.Setter">
+      <point x="-53.75" y="-16.0" />
+      <point x="666.5833333333335" y="424.0" />
+      <point x="288.920061728395" y="424.0" />
+      <point x="-33.33333333333337" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.Order" target="lombok.AllArgsConstructor">
+      <point x="-38.33333333333337" y="-16.0" />
+      <point x="855.5" y="414.0" />
+      <point x="129.69691358024693" y="414.0" />
+      <point x="129.69691358024693" y="212.0" />
+      <point x="103.08672839506164" y="212.0" />
+      <point x="-45.77777777777783" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.ItemOrder" target="lombok.Getter">
+      <point x="25.399999999999977" y="-16.0" />
+      <point x="837.6083333333333" y="162.0" />
+      <point x="1256.3913580246917" y="162.0" />
+      <point x="-33.33333333333326" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.DispatchOrder" target="com.surc.entity.ItemOrder">
+      <point x="13.499999999999943" y="-16.0" />
+      <point x="525.3333333333333" y="454.0" />
+      <point x="764.5833333333335" y="454.0" />
+      <point x="-47.625" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.DispatchOrder" target="lombok.ToString">
+      <point x="67.49999999999994" y="-16.0" />
+      <point x="579.3333333333333" y="534.0" />
+      <point x="1380.4469135802472" y="534.0" />
+      <point x="1380.4469135802472" y="212.0" />
+      <point x="1405.613580246914" y="212.0" />
+      <point x="-13.111111111111086" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.ItemOrder" target="lombok.AllArgsConstructor">
+      <point x="-50.799999999999955" y="-16.0" />
+      <point x="761.4083333333335" y="102.0" />
+      <point x="217.5311728395061" y="102.0" />
+      <point x="68.66666666666666" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.PurchaseOrder" target="com.surc.entity.ItemOrder">
+      <point x="-13.5" y="-16.0" />
+      <point x="1027.3333333333335" y="364.0" />
+      <point x="859.8333333333335" y="364.0" />
+      <point x="47.625" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.PurchaseOrder" target="lombok.NoArgsConstructor">
+      <point x="13.5" y="-16.0" />
+      <point x="1054.3333333333335" y="464.0" />
+      <point x="1042.5441358024693" y="464.0" />
+      <point x="1042.5441358024693" y="142.0" />
+      <point x="936.9793209876545" y="142.0" />
+      <point x="21.888888888888914" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.Order" target="lombok.NoArgsConstructor">
+      <point x="7.666666666666629" y="-16.0" />
+      <point x="901.5" y="464.0" />
+      <point x="922.8958333333335" y="464.0" />
+      <point x="922.8958333333335" y="142.0" />
+      <point x="915.0904320987656" y="142.0" />
+      <point x="0.0" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.Order" target="com.surc.entity.ItemOrder">
+      <point x="-7.666666666666629" y="-16.0" />
+      <point x="886.1666666666667" y="394.0" />
+      <point x="828.0833333333335" y="394.0" />
+      <point x="15.875" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.Goods" target="lombok.Setter">
+      <point x="-23.000000000000057" y="-16.0" />
+      <point x="466.53117283950616" y="192.0" />
+      <point x="344.0867283950617" y="192.0" />
+      <point x="22.22222222222223" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.User" target="lombok.Setter">
+      <point x="-20.75" y="-16.0" />
+      <point x="1282.5833333333335" y="304.0" />
+      <point x="383.0033950617284" y="304.0" />
+      <point x="383.0033950617284" y="212.0" />
+      <point x="332.97561728395056" y="212.0" />
+      <point x="11.111111111111086" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.Client" target="lombok.Setter">
+      <point x="-25.0" y="-16.0" />
+      <point x="1166.8333333333335" y="344.0" />
+      <point x="321.920061728395" y="344.0" />
+      <point x="0.0" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.Person" target="lombok.ToString">
+      <point x="40.0" y="-16.0" />
+      <point x="1203.710802469136" y="202.0" />
+      <point x="1392.5024691358028" y="202.0" />
+      <point x="-26.22222222222217" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.DispatchOrder" target="lombok.Setter">
+      <point x="-40.50000000000006" y="-16.0" />
+      <point x="471.3333333333333" y="574.0" />
+      <point x="277.920061728395" y="574.0" />
+      <point x="-44.44444444444446" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.ItemOrder" target="lombok.Setter">
+      <point x="-25.399999999999977" y="-16.0" />
+      <point x="786.8083333333334" y="92.0" />
+      <point x="355.19783950617284" y="92.0" />
+      <point x="33.33333333333337" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.DispatchOrder" target="lombok.Getter">
+      <point x="40.49999999999994" y="-16.0" />
+      <point x="552.3333333333333" y="474.0" />
+      <point x="1277.1969135802472" y="474.0" />
+      <point x="1277.1969135802472" y="172.0" />
+      <point x="1278.613580246914" y="172.0" />
+      <point x="-11.111111111111086" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.ClientPurchaseOrder" target="lombok.AllArgsConstructor">
+      <point x="-89.58333333333337" y="-16.0" />
+      <point x="630.75" y="434.0" />
+      <point x="11.821913580246928" y="434.0" />
+      <point x="11.821913580246928" y="212.0" />
+      <point x="80.19783950617284" y="212.0" />
+      <point x="-68.66666666666663" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.Client" target="lombok.ToString">
+      <point x="41.66666666666674" y="-16.0" />
+      <point x="1233.5000000000002" y="574.0" />
+      <point x="1537.7777777777778" y="574.0" />
+      <point x="1537.7777777777778" y="202.0" />
+      <point x="1458.0580246913582" y="202.0" />
+      <point x="39.33333333333326" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.User" target="lombok.ToString">
+      <point x="34.58333333333326" y="-16.0" />
+      <point x="1337.9166666666667" y="584.0" />
+      <point x="1548.7777777777778" y="584.0" />
+      <point x="1548.7777777777778" y="192.0" />
+      <point x="1471.1691358024693" y="192.0" />
+      <point x="52.44444444444434" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.Goods" target="lombok.Getter">
+      <point x="22.999999999999943" y="-16.0" />
+      <point x="512.5311728395061" y="152.0" />
+      <point x="1245.2802469135806" y="152.0" />
+      <point x="-44.44444444444434" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.DispatchOrder" target="lombok.AllArgsConstructor">
+      <point x="-67.50000000000006" y="-16.0" />
+      <point x="444.3333333333333" y="584.0" />
+      <point x="0.0" y="584.0" />
+      <point x="0.0" y="202.0" />
+      <point x="57.30895061728393" y="202.0" />
+      <point x="-91.55555555555554" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.Client" target="lombok.AllArgsConstructor">
+      <point x="-41.66666666666674" y="-16.0" />
+      <point x="1150.1666666666667" y="354.0" />
+      <point x="154.80895061728393" y="354.0" />
+      <point x="154.80895061728393" y="212.0" />
+      <point x="148.86450617283947" y="212.0" />
+      <point x="0.0" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.User" target="lombok.AllArgsConstructor">
+      <point x="-34.58333333333326" y="-16.0" />
+      <point x="1268.7500000000002" y="314.0" />
+      <point x="219.30895061728393" y="314.0" />
+      <point x="219.30895061728393" y="212.0" />
+      <point x="171.75339506172827" y="212.0" />
+      <point x="22.8888888888888" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.Goods" target="com.fasterxml.jackson.databind.annotation.JsonDeserialize">
+      <point x="-7.6666666666667425" y="-16.0" />
+      <point x="0.0" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.Person" target="lombok.Setter">
+      <point x="-20.0" y="-16.0" />
+      <point x="1143.710802469136" y="72.0" />
+      <point x="366.3089506172839" y="72.0" />
+      <point x="44.44444444444446" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.ClientPurchaseOrder" target="lombok.Getter">
+      <point x="53.75" y="-16.0" />
+      <point x="774.0833333333335" y="484.0" />
+      <point x="1289.9469135802472" y="484.0" />
+      <point x="0.0" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.PurchaseOrder" target="lombok.ToString">
+      <point x="67.5" y="-16.0" />
+      <point x="1108.3333333333335" y="564.0" />
+      <point x="1526.7777777777778" y="564.0" />
+      <point x="1526.7777777777778" y="212.0" />
+      <point x="1444.9469135802472" y="212.0" />
+      <point x="26.22222222222217" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.PurchaseOrder" target="lombok.AllArgsConstructor">
+      <point x="-67.5" y="-16.0" />
+      <point x="973.3333333333335" y="384.0" />
+      <point x="143.80895061728393" y="384.0" />
+      <point x="143.80895061728393" y="202.0" />
+      <point x="125.97561728395056" y="202.0" />
+      <point x="-22.888888888888914" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.ClientPurchaseOrder" target="com.surc.entity.ItemOrder">
+      <point x="17.91666666666663" y="-16.0" />
+      <point x="738.25" y="464.0" />
+      <point x="796.3333333333335" y="464.0" />
+      <point x="-15.875" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.Person" target="lombok.NoArgsConstructor">
+      <point x="0.0" y="-16.0" />
+      <point x="1163.710802469136" y="62.0" />
+      <point x="980.7570987654321" y="62.0" />
+      <point x="65.66666666666663" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.Person" target="lombok.AllArgsConstructor">
+      <point x="-40.0" y="-16.0" />
+      <point x="1123.710802469136" y="82.0" />
+      <point x="240.420061728395" y="82.0" />
+      <point x="91.55555555555554" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.User" target="lombok.Getter">
+      <point x="20.75" y="-16.0" />
+      <point x="1324.0833333333335" y="524.0" />
+      <point x="1333.9469135802472" y="524.0" />
+      <point x="44.44444444444434" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.User" target="lombok.NoArgsConstructor">
+      <point x="6.9166666666667425" y="-16.0" />
+      <point x="1310.2500000000002" y="284.0" />
+      <point x="1236.5024691358026" y="284.0" />
+      <point x="1236.5024691358026" y="52.0" />
+      <point x="1002.6459876543211" y="52.0" />
+      <point x="87.55555555555554" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.Client" target="lombok.Getter">
+      <point x="25.0" y="-16.0" />
+      <point x="1216.8333333333335" y="514.0" />
+      <point x="1322.9469135802472" y="514.0" />
+      <point x="33.33333333333326" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.Person" target="lombok.Getter">
+      <point x="20.0" y="-16.0" />
+      <point x="1183.710802469136" y="172.0" />
+      <point x="1267.5024691358028" y="172.0" />
+      <point x="-22.22222222222217" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.Client" target="lombok.NoArgsConstructor">
+      <point x="-8.333333333333258" y="-16.0" />
+      <point x="1183.5000000000002" y="334.0" />
+      <point x="1103.210802469136" y="334.0" />
+      <point x="1103.210802469136" y="132.0" />
+      <point x="958.8682098765435" y="132.0" />
+      <point x="43.77777777777783" y="16.0" />
+    </edge>
+    <edge source="com.surc.entity.Goods" target="lombok.ToString">
+      <point x="38.333333333333314" y="-16.0" />
+      <point x="527.8645061728396" y="182.0" />
+      <point x="1366.2802469135806" y="182.0" />
+      <point x="-52.44444444444434" y="16.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.8484646194926568" x="1264.6303351772797" y="422.0772256873107" />
+  <SelectedNodes>
+    <node>com.surc.entity.Client</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

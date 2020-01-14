@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd
+	http://www.springframework.org/schema/mvc
+	http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!-- 开启SpringMVC注解模式 -->
+    <mvc:annotation-driven/>
+
+    <!-- 静态资源默认servlet配置
+		(1)加入对静态资源的处理：js,gif,png
+		(2)允许使用"/"做整体映射
+	 -->
+    <mvc:default-servlet-handler/>
+
+    <!--    全局跨域-->
+    <mvc:cors>
+        <mvc:mapping path="/**"
+                     allowed-origins="http://127.0.0.1:8848,http://localhost:8848"
+                     allowed-methods="POST,GET, OPTIONS,DELETE,PUT"
+                     allowed-headers="Content-Type,ContentType,Access-Control-Allow-Headers, Authorization, X-Requested-With"
+                     allow-credentials="true"/>
+    </mvc:cors>
+
+
+    <!--启动AspectJ支持-->
+    <aop:aspectj-autoproxy proxy-target-class="true" />
+
+    <!-- ViewResolver -->
+<!--    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"-->
+<!--          id="internalResourceViewResolver">-->
+<!--        <property name="prefix" value="/WEB-INF/html/"/>-->
+<!--        <property name="suffix" value=".html"/>-->
+<!--    </bean>-->
+
+    <context:component-scan base-package="com.surc.web"/>
+    <context:component-scan base-package="com.surc.aspect"/>
+
+</beans>

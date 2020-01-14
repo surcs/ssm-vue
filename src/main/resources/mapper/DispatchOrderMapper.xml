@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.surc.dao.DispatchOrderMapper">
+    <!--    void insert(T t);-->
+    <insert id="insert" parameterType="DispatchOrder">
+        insert into dispatch_order (sum,date, address, state, goods_id, number, order_id,
+        sales_keeper_id, warehouse_keeper_id,logistics_id,client_purchase_order_id)
+        values (#{sum},#{date},#{address},#{state},#{goodsId}, #{number}, #{orderId},
+        #{salesKeeperId}, #{warehouseKeeperId},#{logisticsId},#{clientPurchaseOrderId})
+    </insert>
+    <!--    void delete(ID id);-->
+    <delete id="delete">
+        delete from dispatch_order where id = #{id}
+    </delete>
+    <!--    void update(T t);-->
+    <update id="update" parameterType="DispatchOrder">
+        update dispatch_order set sum = #{sum}, date = #{date}, address = #{address}, state = #{state},
+        goods_id = #{goodsId},number = #{number},order_id = #{orderId},
+        sales_keeper_id = #{salesKeeperId},warehouse_keeper_id = #{warehouseKeeperId},
+        client_purchase_order_id = #{clientPurchaseOrderId},logistics_id = #{ logisticsId }
+        where id = #{id}
+    </update>
+    <!--    T selectById(ID id);-->
+    <select id="selectById" resultType="DispatchOrder">
+        select * from dispatch_order where id = #{id}
+    </select>
+    <!--    List<T> selectAll();-->
+    <select id="selectAll" resultType="DispatchOrder">
+        select * from dispatch_order
+    </select>
+
+    <!--    List<DispatchOrder> selectSalesKeeperUncheck();-->
+    <select id="selectSalesKeeperUncheck" resultType="DispatchOrder">
+        select * from dispatch_order where state = 'S_UNCHECK'
+    </select>
+
+    <!--    List<DispatchOrder> selectWarehouseKeeperUncheck();-->
+    <select id="selectWarehouseKeeperUncheck" resultType="DispatchOrder">
+        select * from dispatch_order where state = 'W_UNCHECK'
+    </select>
+
+</mapper>

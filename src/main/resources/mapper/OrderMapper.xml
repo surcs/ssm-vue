@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.surc.dao.OrderMapper">
+
+    <resultMap id="order" type="Order">
+        <result property="id" column="id"/>
+        <result property="date" column="date"/>
+        <result property="address" column="address"/>
+        <result property="state" column="state"/>
+        <result property="sum" column="sum"/>
+
+        <result property="clientEmail" column="client_email"/>
+        <result property="salesmanId" column="salesman_id"/>
+        <result property="goodsList" column="goods_list" typeHandler="com.surc.util.mybatis.GoodsListTypeHandler"/>
+    </resultMap>
+
+<!--    void insert(T t);-->
+    <insert id="insert" parameterType="Order">
+        insert into `order` (sum,date, address, state, client_email, salesman_id, goods_list)
+        values (#{sum},#{date},#{address},#{state},#{clientEmail},#{salesmanId},
+                #{goodsList,typeHandler = com.surc.util.mybatis.GoodsListTypeHandler})
+    </insert>
+<!--    void delete(ID id);-->
+    <delete id="delete">
+        delete from `order` where id = #{id}
+    </delete>
+<!--    void update(T t);-->
+    <update id="update" parameterType="Order">
+        update `order` set  sum = #{sum},date = #{date}, address = #{address}, state = #{state},
+        client_email = #{clientEmail}, salesman_id = #{salesmanId},
+                            goods_list = #{goodsList,typeHandler = com.surc.util.mybatis.GoodsListTypeHandler}
+        where id = #{id}
+    </update>
+<!--    T selectById(ID id);-->
+    <select id="selectById" resultMap="order">
+        select * from `order` where id = #{id}
+    </select>
+    <!--    List<T> selectAll();-->
+    <select id="selectAll" resultMap="order">
+        select * from `order`
+    </select>
+<!--    List<Order> selectOrderListBySalesmanId(long id);-->
+    <select id="selectOrderListBySalesmanId" resultMap="order">
+        select * from `order` where salesman_id = #{id}
+    </select>
+</mapper>

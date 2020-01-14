@@ -1,0 +1,48 @@
+@startuml
+
+enum OrderState {
+UNPAID
+RUN
+CLOSE
+UNCHECK
+S_UNCHECK
+W_UNCHECK
+}
+
+enum Sex {
+MALE
+FEMALE
+}
+
+enum UserPosition {
+SALESMAN
+SALES_KEEPER
+WAREHOUSE_KEEPER
+}
+
+class Person
+class User
+class Client
+Person ^-- User
+Person ^-- Client
+
+class ItemOrder
+class ClientPurchaseOrder
+class DispatchOrder
+class Order
+class PurchaseOrder
+ItemOrder ^-- ClientPurchaseOrder
+ItemOrder ^-- DispatchOrder
+ItemOrder ^-- Order
+ItemOrder ^-- PurchaseOrder
+
+class Goods
+
+Goods "1" -- "1" PurchaseOrder
+DispatchOrder "1" -- "1" Goods
+Client "1..*" -- "1..*" Goods
+(Client, Goods) . Order
+Order "1" -- "n" ClientPurchaseOrder
+ClientPurchaseOrder "1" -- "n" DispatchOrder
+
+@enduml

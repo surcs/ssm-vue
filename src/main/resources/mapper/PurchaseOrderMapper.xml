@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.surc.dao.PurchaseOrderMapper">
+    <!--    void insert(T t);-->
+    <insert id="insert" parameterType="PurchaseOrder">
+        insert into purchase_order ( date, address, state, goods_id, number,
+            warehouse_keeper_id_close,warehouse_keeper_id_confirm,logistics_id)
+        values (#{date},#{address},#{state},#{goodsId}, #{number},
+                #{warehouseKeeperIdClose},#{warehouseKeeperIdConfirm},#{logisticsId})
+    </insert>
+    <!--    void delete(ID id);-->
+    <delete id="delete">
+        delete from purchase_order where id = #{id}
+    </delete>
+    <!--    void update(T t);-->
+    <update id="update" parameterType="PurchaseOrder">
+        update purchase_order set date = #{date}, address = #{address}, state = #{state},
+            goods_id = #{goodsId},number = #{number},logistics_id = #{logisticsId},
+            warehouse_keeper_id_close = #{warehouseKeeperIdClose},
+            warehouse_keeper_id_confirm = #{warehouseKeeperIdConfirm}
+        where id = #{id}
+    </update>
+    <!--    T selectById(ID id);-->
+    <select id="selectById" resultType="PurchaseOrder">
+        select * from purchase_order where id = #{id}
+    </select>
+    <!--    List<T> selectAll();-->
+    <select id="selectAll" resultType="PurchaseOrder">
+        select * from purchase_order
+    </select>
+    <!--    List<DispatchOrder> selectToClose();-->
+    <select id="selectToClose" resultType="PurchaseOrder">
+        select * from purchase_order where state = 'RUN'
+    </select>
+    <!--    List<DispatchOrder> selectToConfirm();-->
+    <select id="selectToConfirm" resultType="PurchaseOrder">
+        select * from purchase_order where state = 'W_UNCHECK'
+    </select>
+</mapper>

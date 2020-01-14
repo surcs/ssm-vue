@@ -1,0 +1,92 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection) or
+# paste cURL into the file and request will be converted to HTTP Request format.
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+POST http://localhost:8080/order/insert
+Content-Type: application/json
+
+{
+  "date":"2019-01-03",
+  "address":"a",
+  "state":"CLOSE",
+  "sum":0.0,
+  "clientEmail":"s",
+  "salesmanId":2,
+  "goodsList":[{"goodsId":2,"goodsName":"2","inventory":2,"minInventory":2,"price":2.0}],
+  "id":0
+}
+
+
+
+###
+
+POST http://localhost:8080/order/update
+Content-Type: application/json
+
+
+{
+  "date":"2019-01-23",
+  "address":"d",
+  "state":"PAID",
+  "sum":9.9,
+  "clientEmail":"ss",
+  "salesmanId":2,
+  "goodsList":[{"goodsId":22,"goodsName":"22","inventory":22,"minInventory":22,"price":22.0},{"goodsId":22,"goodsName":"22","inventory":22,"minInventory":22,"price":22.0}],
+  "id":5
+}
+###
+
+POST http://localhost:8080/order/delete
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Connection: keep-alive
+Content-Type: application/x-www-form-urlencoded;charset=UTF-8
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origi
+
+
+id=4
+
+
+###
+
+POST http://localhost:8080/order/select
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Connection: keep-alive
+Content-Type: application/x-www-form-urlencoded;charset=UTF-8
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origi
+
+
+id=2
+
+
+###
+
+
+POST http://localhost:8080/order/selectAll
+Content-Type: application/json
+
+###
+
+POST http://localhost:8080/order/selectOrderListBySalesmanId
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Connection: keep-alive
+Content-Type: application/x-www-form-urlencoded;charset=UTF-8
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origi
+
+
+id=2
+
+
+###

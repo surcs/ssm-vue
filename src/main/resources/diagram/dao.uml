@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.surc.dao.BaseMapper</OriginalElement>
+  <nodes>
+    <node x="0.0" y="232.0">com.surc.dao.DispatchOrderMapper</node>
+    <node x="399.0" y="232.0">com.surc.dao.UserMapper</node>
+    <node x="728.0" y="232.0">com.surc.dao.PurchaseOrderMapper</node>
+    <node x="235.0" y="232.0">com.surc.dao.OrderMapper</node>
+    <node x="555.0" y="232.0">com.surc.dao.ClientMapper</node>
+    <node x="434.5" y="0.0">org.apache.ibatis.annotations.Mapper</node>
+    <node x="963.0" y="232.0">com.surc.dao.GoodsMapper</node>
+    <node x="710.5" y="0.0">org.springframework.stereotype.Repository</node>
+    <node x="1127.0" y="232.0">com.surc.dao.ClientPurchaseOrderMapper</node>
+    <node x="554.5" y="0.0">com.surc.dao.BaseMapper</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.surc.dao.OrderMapper" target="com.surc.dao.BaseMapper">
+      <point x="0.0" y="-16.0" />
+      <point x="307.0" y="162.0" />
+      <point x="583.6428571428571" y="162.0" />
+      <point x="-38.85714285714289" y="16.0" />
+    </edge>
+    <edge source="com.surc.dao.OrderMapper" target="org.springframework.stereotype.Repository">
+      <point x="48.0" y="-16.0" />
+      <point x="355.0" y="192.0" />
+      <point x="739.6428571428571" y="192.0" />
+      <point x="-38.85714285714289" y="16.0" />
+    </edge>
+    <edge source="com.surc.dao.OrderMapper" target="org.apache.ibatis.annotations.Mapper">
+      <point x="-48.0" y="-16.0" />
+      <point x="259.0" y="132.0" />
+      <point x="455.92857142857144" y="132.0" />
+      <point x="-28.571428571428555" y="16.0" />
+    </edge>
+    <edge source="com.surc.dao.UserMapper" target="org.springframework.stereotype.Repository">
+      <point x="45.33333333333326" y="-16.0" />
+      <point x="512.3333333333333" y="202.0" />
+      <point x="759.0714285714286" y="202.0" />
+      <point x="-19.428571428571445" y="16.0" />
+    </edge>
+    <edge source="com.surc.dao.ClientMapper" target="org.springframework.stereotype.Repository">
+      <point x="51.0" y="-16.0" />
+      <point x="682.5" y="212.0" />
+      <point x="778.5" y="212.0" />
+      <point x="0.0" y="16.0" />
+    </edge>
+    <edge source="com.surc.dao.UserMapper" target="org.apache.ibatis.annotations.Mapper">
+      <point x="-45.33333333333326" y="-16.0" />
+      <point x="421.66666666666674" y="142.0" />
+      <point x="470.21428571428567" y="142.0" />
+      <point x="-14.285714285714334" y="16.0" />
+    </edge>
+    <edge source="com.surc.dao.PurchaseOrderMapper" target="org.springframework.stereotype.Repository">
+      <point x="71.66666666666663" y="-16.0" />
+      <point x="907.1666666666666" y="112.0" />
+      <point x="797.9285714285714" y="112.0" />
+      <point x="19.428571428571445" y="16.0" />
+    </edge>
+    <edge source="com.surc.dao.PurchaseOrderMapper" target="com.surc.dao.BaseMapper">
+      <point x="0.0" y="-16.0" />
+      <point x="835.5" y="122.0" />
+      <point x="641.9285714285714" y="122.0" />
+      <point x="19.428571428571445" y="16.0" />
+    </edge>
+    <edge source="com.surc.dao.ClientMapper" target="com.surc.dao.BaseMapper">
+      <point x="0.0" y="-16.0" />
+      <point x="631.5" y="172.0" />
+      <point x="622.5" y="172.0" />
+      <point x="0.0" y="16.0" />
+    </edge>
+    <edge source="com.surc.dao.UserMapper" target="com.surc.dao.BaseMapper">
+      <point x="0.0" y="-16.0" />
+      <point x="467.0" y="172.0" />
+      <point x="603.0714285714286" y="172.0" />
+      <point x="-19.428571428571445" y="16.0" />
+    </edge>
+    <edge source="com.surc.dao.PurchaseOrderMapper" target="org.apache.ibatis.annotations.Mapper">
+      <point x="-71.66666666666669" y="-16.0" />
+      <point x="763.8333333333333" y="132.0" />
+      <point x="498.7857142857142" y="132.0" />
+      <point x="14.28571428571422" y="16.0" />
+    </edge>
+    <edge source="com.surc.dao.GoodsMapper" target="com.surc.dao.BaseMapper">
+      <point x="0.0" y="-16.0" />
+      <point x="1035.0" y="92.0" />
+      <point x="661.3571428571429" y="92.0" />
+      <point x="38.85714285714289" y="16.0" />
+    </edge>
+    <edge source="com.surc.dao.ClientPurchaseOrderMapper" target="com.surc.dao.BaseMapper">
+      <point x="0.0" y="-16.0" />
+      <point x="1261.0" y="62.0" />
+      <point x="680.7857142857143" y="62.0" />
+      <point x="58.285714285714334" y="16.0" />
+    </edge>
+    <edge source="com.surc.dao.ClientPurchaseOrderMapper" target="org.apache.ibatis.annotations.Mapper">
+      <point x="-89.33333333333331" y="-16.0" />
+      <point x="1171.6666666666667" y="72.0" />
+      <point x="527.3571428571429" y="72.0" />
+      <point x="42.85714285714289" y="16.0" />
+    </edge>
+    <edge source="com.surc.dao.ClientPurchaseOrderMapper" target="org.springframework.stereotype.Repository">
+      <point x="89.33333333333331" y="-16.0" />
+      <point x="1350.3333333333333" y="52.0" />
+      <point x="836.7857142857143" y="52.0" />
+      <point x="58.285714285714334" y="16.0" />
+    </edge>
+    <edge source="com.surc.dao.GoodsMapper" target="org.springframework.stereotype.Repository">
+      <point x="48.0" y="-16.0" />
+      <point x="1083.0" y="82.0" />
+      <point x="817.3571428571429" y="82.0" />
+      <point x="38.85714285714289" y="16.0" />
+    </edge>
+    <edge source="com.surc.dao.GoodsMapper" target="org.apache.ibatis.annotations.Mapper">
+      <point x="-48.0" y="-16.0" />
+      <point x="987.0" y="102.0" />
+      <point x="513.0714285714286" y="102.0" />
+      <point x="28.571428571428555" y="16.0" />
+    </edge>
+    <edge source="com.surc.dao.ClientMapper" target="org.apache.ibatis.annotations.Mapper">
+      <point x="-51.0" y="-16.0" />
+      <point x="580.5" y="142.0" />
+      <point x="484.5" y="142.0" />
+      <point x="0.0" y="16.0" />
+    </edge>
+    <edge source="com.surc.dao.DispatchOrderMapper" target="com.surc.dao.BaseMapper">
+      <point x="0.0" y="-16.0" />
+      <point x="107.5" y="152.0" />
+      <point x="564.2142857142858" y="152.0" />
+      <point x="-58.28571428571422" y="16.0" />
+    </edge>
+    <edge source="com.surc.dao.DispatchOrderMapper" target="org.apache.ibatis.annotations.Mapper">
+      <point x="-71.66666666666674" y="-16.0" />
+      <point x="35.83333333333326" y="122.0" />
+      <point x="441.6428571428571" y="122.0" />
+      <point x="-42.85714285714289" y="16.0" />
+    </edge>
+    <edge source="com.surc.dao.DispatchOrderMapper" target="org.springframework.stereotype.Repository">
+      <point x="71.66666666666674" y="-16.0" />
+      <point x="179.16666666666674" y="182.0" />
+      <point x="720.2142857142858" y="182.0" />
+      <point x="-58.28571428571422" y="16.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.714487632508834" x="697.5" y="132.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,35 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection) or
+# paste cURL into the file and request will be converted to HTTP Request format.
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+
+#测试例子: 添加采购订单
+POST http://localhost:8080/clientPurchaseOrder/insert
+Content-Type: application/json;charset=UTF-8
+
+{"id":"","sum":"600","orderId":"2",
+  "address":"address","state":"RUN","date":"2019-12-04",
+  "goodsList":[{"paid": 200, "send": 0, "price": 1.0, "total": 500, "goodsId": 1,
+    "goodsName": "小骚鸡", "inventory": 4, "minInventory": 2},
+    {"paid": 200, "send": 0, "price": 2.0, "total": 500, "goodsId": 2,
+      "goodsName": "小蟑螂", "inventory": 1, "minInventory": 1}]
+}
+
+
+###
+
+POST http://localhost:8080/clientPurchaseOrder/insert
+Content-Type: application/json;charset=UTF-8
+
+{"id":"","sum":"13","orderId":"4",
+  "address":"address","state":"RUN","date":"2019-12-04",
+  "goodsList":[{"paid": 2, "send": 0, "price": 4.0, "total": 1, "goodsId": 1,
+    "goodsName": "小蟑螂", "inventory": 1, "minInventory": 1}]
+}
+
+
+###

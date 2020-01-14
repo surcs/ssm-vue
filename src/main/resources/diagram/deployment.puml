@@ -1,0 +1,23 @@
+@startuml
+
+node WebpackDevServer{
+    component VueCliService
+}
+
+node Tomcat{
+    component Test4WarExploded
+}
+
+node DBServer{
+    component MySQL
+}
+
+node UserClient{
+    component Browser
+}
+
+WebpackDevServer -- UserClient
+Tomcat -- UserClient
+Tomcat -- DBServer
+
+@enduml

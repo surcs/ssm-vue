@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.surc.web.controller.BaseController</OriginalElement>
+  <nodes>
+    <node x="1427.0" y="344.0">com.surc.web.controller.DispatchOrderController</node>
+    <node x="578.5" y="82.0">com.surc.web.controller.BaseController</node>
+    <node x="434.0" y="344.0">com.surc.web.controller.GoodsController</node>
+    <node x="1318.6698717948718" y="82.0">org.springframework.web.bind.annotation.RequestMapping</node>
+    <node x="634.0" y="344.0">com.surc.web.controller.OrderController</node>
+    <node x="845.9166666666667" y="82.0">org.springframework.stereotype.Controller</node>
+    <node x="583.0" y="0.0">org.springframework.context.annotation.ComponentScan</node>
+    <node x="1697.0" y="344.0">com.surc.web.controller.PageController</node>
+    <node x="834.0" y="344.0">com.surc.web.controller.PurchaseOrderController</node>
+    <node x="1888.0" y="344.0">com.surc.web.controller.UserController</node>
+    <node x="1104.0" y="344.0">com.surc.web.controller.ClientPurchaseOrderController</node>
+    <node x="208.0" y="344.0">com.surc.web.controller.SalesmanController</node>
+    <node x="0.0" y="344.0">com.surc.web.controller.ClientController</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.surc.web.controller.GoodsController" target="com.surc.web.controller.BaseController">
+      <point x="-60.0" y="-16.0" />
+      <point x="464.0" y="224.0" />
+      <point x="639.5714285714286" y="224.0" />
+      <point x="-24.428571428571445" y="16.0" />
+    </edge>
+    <edge source="com.surc.web.controller.PageController" target="org.springframework.stereotype.Controller">
+      <point x="-42.75" y="-16.0" />
+      <point x="1739.75" y="164.0" />
+      <point x="959.25" y="164.0" />
+      <point x="45.33333333333326" y="16.0" />
+    </edge>
+    <edge source="com.surc.web.controller.OrderController" target="org.springframework.web.bind.annotation.RequestMapping">
+      <point x="60.0" y="-16.0" />
+      <point x="784.0" y="304.0" />
+      <point x="1385.1698717948718" y="304.0" />
+      <point x="-19.0" y="16.0" />
+    </edge>
+    <edge source="com.surc.web.controller.PurchaseOrderController" target="org.springframework.stereotype.Controller">
+      <point x="0.0" y="-16.0" />
+      <point x="959.0" y="264.0" />
+      <point x="913.9166666666667" y="264.0" />
+      <point x="0.0" y="16.0" />
+    </edge>
+    <edge source="com.surc.web.controller.ClientPurchaseOrderController" target="org.springframework.stereotype.Controller">
+      <point x="0.0" y="-16.0" />
+      <point x="1255.5" y="204.0" />
+      <point x="929.0277777777778" y="204.0" />
+      <point x="15.111111111111086" y="16.0" />
+    </edge>
+    <edge source="com.surc.web.controller.DispatchOrderController" target="org.springframework.web.bind.annotation.RequestMapping">
+      <point x="83.33333333333326" y="-16.0" />
+      <point x="1635.3333333333333" y="174.0" />
+      <point x="1442.1698717948718" y="174.0" />
+      <point x="38.0" y="16.0" />
+    </edge>
+    <edge source="com.surc.web.controller.SalesmanController" target="org.springframework.web.bind.annotation.RequestMapping">
+      <point x="68.66666666666669" y="-16.0" />
+      <point x="379.66666666666674" y="284.0" />
+      <point x="1347.1698717948718" y="284.0" />
+      <point x="-57.0" y="16.0" />
+    </edge>
+    <edge source="com.surc.web.controller.PurchaseOrderController" target="org.springframework.web.bind.annotation.RequestMapping">
+      <point x="83.33333333333337" y="-16.0" />
+      <point x="1042.3333333333335" y="314.0" />
+      <point x="1404.1698717948718" y="314.0" />
+      <point x="0.0" y="16.0" />
+    </edge>
+    <edge source="com.surc.web.controller.OrderController" target="org.springframework.stereotype.Controller">
+      <point x="0.0" y="-16.0" />
+      <point x="724.0" y="264.0" />
+      <point x="898.8055555555557" y="264.0" />
+      <point x="-15.111111111111086" y="16.0" />
+    </edge>
+    <edge source="com.surc.web.controller.ClientPurchaseOrderController" target="org.springframework.web.bind.annotation.RequestMapping">
+      <point x="101.0" y="-16.0" />
+      <point x="1356.5" y="324.0" />
+      <point x="1423.1698717948718" y="324.0" />
+      <point x="19.0" y="16.0" />
+    </edge>
+    <edge source="com.surc.web.controller.BaseController" target="org.springframework.context.annotation.ComponentScan">
+      <point x="0.0" y="-16.0" />
+      <point x="0.0" y="16.0" />
+    </edge>
+    <edge source="com.surc.web.controller.ClientController" target="org.springframework.stereotype.Controller">
+      <point x="0.0" y="-16.0" />
+      <point x="94.0" y="234.0" />
+      <point x="853.4722222222224" y="234.0" />
+      <point x="-60.44444444444434" y="16.0" />
+    </edge>
+    <edge source="com.surc.web.controller.ClientPurchaseOrderController" target="com.surc.web.controller.BaseController">
+      <point x="-101.0" y="-16.0" />
+      <point x="1154.5" y="214.0" />
+      <point x="712.8571428571429" y="214.0" />
+      <point x="48.85714285714289" y="16.0" />
+    </edge>
+    <edge source="com.surc.web.controller.PageController" target="org.springframework.web.bind.annotation.RequestMapping">
+      <point x="42.75" y="-16.0" />
+      <point x="1825.25" y="154.0" />
+      <point x="1461.1698717948718" y="154.0" />
+      <point x="57.0" y="16.0" />
+    </edge>
+    <edge source="com.surc.web.controller.DispatchOrderController" target="org.springframework.stereotype.Controller">
+      <point x="0.0" y="-16.0" />
+      <point x="1552.0" y="184.0" />
+      <point x="944.1388888888889" y="184.0" />
+      <point x="30.22222222222217" y="16.0" />
+    </edge>
+    <edge source="com.surc.web.controller.GoodsController" target="org.springframework.web.bind.annotation.RequestMapping">
+      <point x="60.0" y="-16.0" />
+      <point x="584.0" y="294.0" />
+      <point x="1366.1698717948718" y="294.0" />
+      <point x="-38.0" y="16.0" />
+    </edge>
+    <edge source="com.surc.web.controller.SalesmanController" target="com.surc.web.controller.BaseController">
+      <point x="-68.66666666666669" y="-16.0" />
+      <point x="242.33333333333326" y="214.0" />
+      <point x="615.1428571428571" y="214.0" />
+      <point x="-48.85714285714289" y="16.0" />
+    </edge>
+    <edge source="com.surc.web.controller.UserController" target="org.springframework.stereotype.Controller">
+      <point x="-42.75" y="-16.0" />
+      <point x="1930.75" y="144.0" />
+      <point x="974.3611111111111" y="144.0" />
+      <point x="60.44444444444434" y="16.0" />
+    </edge>
+    <edge source="com.surc.web.controller.ClientController" target="com.surc.web.controller.BaseController">
+      <point x="-62.66666666666663" y="-16.0" />
+      <point x="31.33333333333337" y="204.0" />
+      <point x="590.7142857142858" y="204.0" />
+      <point x="-73.28571428571422" y="16.0" />
+    </edge>
+    <edge source="com.surc.web.controller.PurchaseOrderController" target="com.surc.web.controller.BaseController">
+      <point x="-83.33333333333331" y="-16.0" />
+      <point x="875.6666666666667" y="224.0" />
+      <point x="688.4285714285714" y="224.0" />
+      <point x="24.428571428571445" y="16.0" />
+    </edge>
+    <edge source="com.surc.web.controller.OrderController" target="com.surc.web.controller.BaseController">
+      <point x="-60.0" y="-16.0" />
+      <point x="0.0" y="16.0" />
+    </edge>
+    <edge source="com.surc.web.controller.UserController" target="org.springframework.web.bind.annotation.RequestMapping">
+      <point x="42.75" y="-16.0" />
+      <point x="2016.25" y="134.0" />
+      <point x="1480.1698717948718" y="134.0" />
+      <point x="76.0" y="16.0" />
+    </edge>
+    <edge source="com.surc.web.controller.GoodsController" target="org.springframework.stereotype.Controller">
+      <point x="0.0" y="-16.0" />
+      <point x="524.0" y="254.0" />
+      <point x="883.6944444444446" y="254.0" />
+      <point x="-30.22222222222217" y="16.0" />
+    </edge>
+    <edge source="com.surc.web.controller.ClientController" target="org.springframework.web.bind.annotation.RequestMapping">
+      <point x="62.666666666666686" y="-16.0" />
+      <point x="156.66666666666674" y="274.0" />
+      <point x="1328.1698717948718" y="274.0" />
+      <point x="-76.0" y="16.0" />
+    </edge>
+    <edge source="com.surc.web.controller.DispatchOrderController" target="com.surc.web.controller.BaseController">
+      <point x="-83.33333333333326" y="-16.0" />
+      <point x="1468.6666666666667" y="194.0" />
+      <point x="737.2857142857142" y="194.0" />
+      <point x="73.28571428571422" y="16.0" />
+    </edge>
+    <edge source="com.surc.web.controller.SalesmanController" target="org.springframework.stereotype.Controller">
+      <point x="-1.4210854715202004E-14" y="-16.0" />
+      <point x="311.0" y="244.0" />
+      <point x="868.5833333333335" y="244.0" />
+      <point x="-45.33333333333326" y="16.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.4862914862914863" x="1029.5" y="188.0" />
+  <SelectedNodes>
+    <node>com.surc.web.controller.BaseController</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

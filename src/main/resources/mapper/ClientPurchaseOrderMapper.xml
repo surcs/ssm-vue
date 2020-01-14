@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.surc.dao.ClientPurchaseOrderMapper">
+
+    <resultMap id="clientPurchaseOrder" type="ClientPurchaseOrder">
+        <result property="id" column="id"/>
+        <result property="date" column="date"/>
+        <result property="address" column="address"/>
+        <result property="state" column="state"/>
+        <result property="sum" column="sum"/>
+
+        <result property="orderId" column="order_id"/>
+        <result property="goodsList" column="goods_list" typeHandler="com.surc.util.mybatis.GoodsListTypeHandler"/>
+    </resultMap>
+
+    <!--    void insert(T t);-->
+    <insert id="insert" parameterType="ClientPurchaseOrder">
+        insert into client_purchase_order (sum,date, address, state,order_id,goods_list)
+        values (#{sum},#{date},#{address},#{state},#{orderId},
+                #{goodsList,typeHandler = com.surc.util.mybatis.GoodsListTypeHandler})
+    </insert>
+    <!--    void delete(ID id);-->
+    <delete id="delete">
+        delete from client_purchase_order where id = #{id}
+    </delete>
+    <!--    void update(T t);-->
+    <update id="update" parameterType="ClientPurchaseOrder">
+        update client_purchase_order set sum = #{sum}, date = #{date},
+           address = #{address}, state = #{state},order_id = #{orderId},
+           goods_list = #{goodsList,typeHandler = com.surc.util.mybatis.GoodsListTypeHandler}
+        where id = #{id}
+    </update>
+    <!--    T selectById(ID id);-->
+    <select id="selectById" resultMap="clientPurchaseOrder">
+        select * from client_purchase_order where id = #{id}
+    </select>
+    <!--    List<T> selectAll();-->
+    <select id="selectAll" resultMap="clientPurchaseOrder">
+        select * from client_purchase_order
+    </select>
+
+    <!--    List<ClientPurchaseOrder> selectCountAllSales(@Param("start") String start,@Param("end") String end);-->
+    <select id="selectCountAllSales" resultMap="clientPurchaseOrder">
+        select * from client_purchase_order where date between #{start} and #{end}
+    </select>
+    <!--    List<ClientPurchaseOrder> selectCountSalesByClientId(@Param("id") String id,@Param("start") String start,@Param("end") String end);-->
+    <select id="selectCountSalesByClientId" resultMap="clientPurchaseOrder">
+        select * from client_purchase_order,`order` where client_email = #{id}
+        and `order`.id = order_id and client_purchase_order.date between #{start} and #{end}
+    </select>
+<!--    List<ClientPurchaseOrder> selectCountSalesBySalesmanId(@Param("id") long id,@Param("start") String start,@Param("end") String end);-->
+    <select id="selectCountSalesBySalesmanId" resultMap="clientPurchaseOrder">
+        select * from client_purchase_order,`order` where `order`.id = client_purchase_order.order_id
+        and salesman_id = #{id} and client_purchase_order.date between #{start} and #{end}
+    </select>
+</mapper>

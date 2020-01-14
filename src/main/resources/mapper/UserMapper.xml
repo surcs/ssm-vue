@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.surc.dao.UserMapper">
+    <!--    void insert(T t);-->
+    <insert id="insert" parameterType="User">
+        insert into user (password, name, sex, position,email,phone,birth)
+        values  (#{password},#{name},#{sex},#{position},#{email},#{phone},#{birth})
+    </insert>
+    <!--    void delete(long id);-->
+    <delete id="delete">
+        delete from user where id = #{id}
+    </delete>
+    <!--    void update(T t);-->
+    <update id="update" parameterType="User">
+        update user set password = #{password}, name = #{name}, sex = #{sex},
+        position = #{position}, email = #{email}, phone = #{phone}, birth = #{birth}
+        where id = #{id}
+    </update>
+    <!--    T selectById(long id);-->
+    <select id="selectById" resultType="User">
+        select * from user where id = #{id}
+    </select>
+    <!--    List<T> selectAll();-->
+    <select id="selectAll" resultType="User">
+        select * from user
+    </select>
+    <!--    List<User> selectUserByPosition(UserPosition userPosition);-->
+    <select id="selectUserByPosition" resultType="User">
+        select * from user where position = #{userPosition}
+    </select>
+</mapper>

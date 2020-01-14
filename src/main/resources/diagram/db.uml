@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>207142e7-4a66-4866-ae8c-fd6b3f410ce7.TABLE:test4.client</OriginalElement>
+  <nodes>
+    <node x="202.0" y="928.3499932482613">207142e7-4a66-4866-ae8c-fd6b3f410ce7.TABLE:test4.goods</node>
+    <node x="46.24869078013103" y="0.0">207142e7-4a66-4866-ae8c-fd6b3f410ce7.TABLE:test4.client_purchase_order</node>
+    <node x="643.3285362413827" y="345.15322255187584">207142e7-4a66-4866-ae8c-fd6b3f410ce7.TABLE:test4.dispatch_order</node>
+    <node x="928.3285362413827" y="0.0">207142e7-4a66-4866-ae8c-fd6b3f410ce7.TABLE:test4.purchase_order</node>
+    <node x="0.0" y="928.3499932482613">207142e7-4a66-4866-ae8c-fd6b3f410ce7.TABLE:test4.user</node>
+    <node x="0.0" y="645.3499932482613">207142e7-4a66-4866-ae8c-fd6b3f410ce7.TABLE:test4.order</node>
+    <node x="424.0" y="928.3499932482613">207142e7-4a66-4866-ae8c-fd6b3f410ce7.TABLE:test4.client</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="207142e7-4a66-4866-ae8c-fd6b3f410ce7.TABLE:test4.dispatch_order" target="207142e7-4a66-4866-ae8c-fd6b3f410ce7.TABLE:test4.order">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="207142e7-4a66-4866-ae8c-fd6b3f410ce7.TABLE:test4.dispatch_order" target="207142e7-4a66-4866-ae8c-fd6b3f410ce7.TABLE:test4.client_purchase_order">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="207142e7-4a66-4866-ae8c-fd6b3f410ce7.TABLE:test4.client_purchase_order" target="207142e7-4a66-4866-ae8c-fd6b3f410ce7.TABLE:test4.order">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Circular" zoom="0.5644481887110362" x="602.0" y="583.5" />
+  <SelectedNodes>
+    <node>207142e7-4a66-4866-ae8c-fd6b3f410ce7.TABLE:test4.goods</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Key columns</Category>
+    <Category>Columns</Category>
+  </Categories>
+</Diagram>
+
