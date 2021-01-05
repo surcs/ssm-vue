@@ -18,7 +18,7 @@
     "@vue/cli-plugin-babel": "^4.1.0",
     "@vue/cli-plugin-router": "^4.1.0",
     "@vue/cli-service": "^4.1.0",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "babel-plugin-component": "^1.1.1",
     "babel-plugin-import": "^1.8.0",
     "vue-cli-plugin-axios": "0.0.4",
